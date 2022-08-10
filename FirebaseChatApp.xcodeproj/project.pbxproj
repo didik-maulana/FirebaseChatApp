@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9C1A0A1A28A3978200C0A575 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0A1928A3978200C0A575 /* UIView+Ext.swift */; };
+		9C1A0A2128A39FB800C0A575 /* UITextField+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A0A2028A39FB800C0A575 /* UITextField+Ext.swift */; };
 		9C248AB0289BB24B00B7D28C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C248AAF289BB24B00B7D28C /* AppDelegate.swift */; };
 		9C248AB2289BB24B00B7D28C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C248AB1289BB24B00B7D28C /* SceneDelegate.swift */; };
 		9C248AB4289BB24B00B7D28C /* ConversationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C248AB3289BB24B00B7D28C /* ConversationsViewController.swift */; };
@@ -22,6 +24,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9C1A0A1928A3978200C0A575 /* UIView+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Ext.swift"; sourceTree = "<group>"; };
+		9C1A0A2028A39FB800C0A575 /* UITextField+Ext.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextField+Ext.swift"; sourceTree = "<group>"; };
 		9C248AAC289BB24B00B7D28C /* FirebaseChatApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseChatApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9C248AAF289BB24B00B7D28C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9C248AB1289BB24B00B7D28C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +53,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9C1A0A1628A394AA00C0A575 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				9C248AC9289BB50900B7D28C /* LoginViewController.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		9C1A0A1728A394B500C0A575 /* Register */ = {
+			isa = PBXGroup;
+			children = (
+				9C248ACB289BB51500B7D28C /* RegisterViewController.swift */,
+			);
+			path = Register;
+			sourceTree = "<group>";
+		};
+		9C1A0A1828A3974900C0A575 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9C1A0A1928A3978200C0A575 /* UIView+Ext.swift */,
+				9C1A0A2028A39FB800C0A575 /* UITextField+Ext.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		9C248AA3289BB24B00B7D28C = {
 			isa = PBXGroup;
 			children = (
@@ -71,6 +100,7 @@
 				9C248ABD289BB24C00B7D28C /* Info.plist */,
 				9C248AC6289BB3B600B7D28C /* Applications */,
 				9C248AC3289BB3A100B7D28C /* Controllers */,
+				9C1A0A1828A3974900C0A575 /* Extensions */,
 				9C248AC5289BB3AF00B7D28C /* Models */,
 				9C248AC7289BB3EB00B7D28C /* ViewModels */,
 				9C248AC4289BB3A900B7D28C /* Views */,
@@ -82,12 +112,12 @@
 			isa = PBXGroup;
 			children = (
 				9C248AB3289BB24B00B7D28C /* ConversationsViewController.swift */,
-				9C248AC9289BB50900B7D28C /* LoginViewController.swift */,
 				9C248AD1289BB56100B7D28C /* NewConversationViewController.swift */,
 				9C248ACD289BB53600B7D28C /* PhotoViewerViewController.swift */,
 				9C248AD3289BB57500B7D28C /* ProfileViewController.swift */,
-				9C248ACB289BB51500B7D28C /* RegisterViewController.swift */,
 				9C248ACF289BB54300B7D28C /* VideoPlayerViewController.swift */,
+				9C1A0A1628A394AA00C0A575 /* Login */,
+				9C1A0A1728A394B500C0A575 /* Register */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -206,6 +236,8 @@
 			files = (
 				9C248ACA289BB50900B7D28C /* LoginViewController.swift in Sources */,
 				9C248ACC289BB51500B7D28C /* RegisterViewController.swift in Sources */,
+				9C1A0A2128A39FB800C0A575 /* UITextField+Ext.swift in Sources */,
+				9C1A0A1A28A3978200C0A575 /* UIView+Ext.swift in Sources */,
 				9C248AD2289BB56100B7D28C /* NewConversationViewController.swift in Sources */,
 				9C248AB4289BB24B00B7D28C /* ConversationsViewController.swift in Sources */,
 				9C248AD0289BB54300B7D28C /* VideoPlayerViewController.swift in Sources */,
