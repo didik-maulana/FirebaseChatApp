@@ -132,7 +132,7 @@ extension LoginViewController {
     }
 }
 
-// MARK: UI Action
+// MARK: UI Actions
 extension LoginViewController {
     @objc private func didTapRegister() {
         let registerVC = RegisterViewController()
@@ -141,8 +141,7 @@ extension LoginViewController {
     }
     
     @objc private func performLogin() {
-        emailField.resignFirstResponder()
-        passwordField.resignFirstResponder()
+        hideKeyboard()
         
         guard let email = emailField.text,
               let password = passwordField.text,
@@ -152,6 +151,13 @@ extension LoginViewController {
             showErrorAlert()
             return
         }
+        
+        // TODO: Perform Login with Firebase
+    }
+    
+    private func hideKeyboard() {
+        emailField.resignFirstResponder()
+        passwordField.resignFirstResponder()
     }
     
     private func showErrorAlert() {
